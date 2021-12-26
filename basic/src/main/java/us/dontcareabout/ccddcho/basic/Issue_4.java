@@ -15,6 +15,13 @@ public class Issue_4 {
 			}
 			System.out.println();
 		}
-	}
 
+		for (i = n - 2; i >= 0; i--) {
+			for (j = 0; j <= i; j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+
+	}
 }
