@@ -7,8 +7,14 @@ public class Issue_4 {
 		int i = 0;
 		int j = 0;
 
-		System.out.println("垂直金字塔");
+		System.out.println("for loop 金字塔");
 
+		for (i = 0; i < n; i++) {
+			for (j = 0; j <= i; j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
 	}
 
 }
