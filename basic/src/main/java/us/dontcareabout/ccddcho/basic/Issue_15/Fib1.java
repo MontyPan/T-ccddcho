@@ -1,9 +1,6 @@
 package us.dontcareabout.ccddcho.basic.Issue_15;
 
-/**
- * 1.不應該使用 field 在迴圈內運算，使用 local vaiable 就可以避免多餘程式碼 
- * 2.在迴圈內做 if else 條件判斷，n >= 2 才需要用到迴圈條件
- */
+
 public class Fib1 {
 
 	private final int a0;
