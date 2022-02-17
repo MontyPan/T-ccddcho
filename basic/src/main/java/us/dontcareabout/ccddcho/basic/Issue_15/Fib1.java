@@ -1,6 +1,5 @@
 package us.dontcareabout.ccddcho.basic.Issue_15;
 
-
 public class Fib1 {
 
 	private final int a0;
@@ -12,14 +11,25 @@ public class Fib1 {
 	}
 
 	public int fibonacci(int n) {
-		return calFibonacci(a0, a1, n);
+		if (n == 0) {
+			return a0;
+		}
+
+		if (n == 1) {
+			return a1;
+		}
+
+		int[] a = new int[n + 1];
+		a[0] = a0;
+		a[1] = a1;
+		int result = 0;
+
+		for (int i = 2; i <= n; i++) {
+			a[i] = a[i - 2] + a[i - 1];
+			result = a[i];
+		}
+
+		return result;
 	}
 
-	private static int calFibonacci(int v1, int v2, int n) {
-		if (n == 0) {
-			return v1;
-		}
-		return calFibonacci(v2, v1 + v2, --n);
-	}
-	
 }
